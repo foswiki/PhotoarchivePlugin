@@ -106,6 +106,7 @@ sub commonTagsHandler
         # Called by handleCommonTags, after %INCLUDE:"..."%
 
         $_[0] =~ s/%PHOTOARCHIVEPLUGIN%/startPhotoarchive()/ge;
+        $_[0] =~ s/%BEGINPHOTOARCHIVE%(.*)%ENDPHOTOARCHIVE%/startPhotoarchive($1)/giseo;
         $_[0] =~ s/%PHOTOARCHIVEPLUGINRANDOM%/startRandom()/ge;
 }
 # =========================
@@ -832,6 +833,7 @@ sub getThumbsContent
 # =========================
 sub startPhotoarchive
 {
+    my $desc = $_[0] || '';
         my $content;
         my $page = 1;
         my $view = "thumbs";
