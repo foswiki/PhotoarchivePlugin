@@ -1,0 +1,4 @@
+data/System/PhotoarchivePlugin.txt NEW
+data/Sandbox/PhotoarchivePluginPhotoarchive.txt NEW
+lib/Foswiki/Plugins/PhotoarchivePlugin.pm NEW
+pub/Sandbox/PhotoarchivePluginPhotoarchive/testimage.jpg NEW

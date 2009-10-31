@@ -76,10 +76,7 @@ Plugin settings are stored as preferences variables. To reference a plugin setti
 
    * A few programs of netpbm software package are required to resize images.%BR%
       The default entries are /usr/bin/{anytopnm, pnmscale, pnmtopng, pnmtojpeg}.
-      * Set ANYTOPNM = /usr/bin/anytopnm
-      * Set PNMSCALE = /usr/bin/pnmscale
-      * Set PNMTOPNG = /usr/bin/pnmtopng
-      * Set PNMTOJPEG = /usr/bin/pnmtojpeg
+      These paths should be set in the render script.
 
    * The number of images in row and column for thumbs view
       * Set THUMBSROW = 4
@@ -147,9 +144,11 @@ __Note:__ You do not need to install anything on the browser to use this plugin.
 ---++ Plugin Info
 
 |  Plugin Author: | TWiki:Main/MarkusKolb |
-|  Plugin Version: | 31 Oct 2006 (V1.004) |
+|  Plugin Version: | 04 May 2007 (V1.006) |
 |  Plugin Id: | $Id: PhotoarchivePlugin.txt 15566 2007-11-12 16:18:30Z AndreUlrich $ |
 |  Change History: | <!-- versions below in reverse order -->&nbsp; |
+|  04 May 2007: | V1.006 bugfix - last part of page selection |
+|  04 May 2007: | V1.005 bugfix - descripted and detailed page selection |
 |  31 Oct 2006: | V1.004 updated this plugin info for new version |
 |  31 Oct 2006: | V1.003 fix quote image filename bug (Thanks to Michael Okincha for bug report) |
 |  30 Sep 2004: | V1.002 overwriting of plugin preferences in topic now possible |
@@ -164,5 +163,6 @@ __Note:__ You do not need to install anything on the browser to use this plugin.
 
 __Related Topics:__ %SYSTEMWEB%.DefaultPreferences, %USERSWEB%.SitePreferences, [[%SYSTEMWEB%.Plugins][Plugins]]
 
--- Main.MarkusKolb - 31 Oct 2006
+
+-- TWiki:Main.MarkusKolb - 04 May 2007
 
